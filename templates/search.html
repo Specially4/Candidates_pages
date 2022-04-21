@@ -5,9 +5,13 @@
         <title>Список кандидатов</title>
     </head>
     <body>
-        <h1>Найдено кандидатов {{ count }}</h1>
-        {% for i in candidate %}
-            <p><a href="/candidates/{{ i.id }}">{{ i.name }}</a></p>
-        {% endfor %}
+        <div class="block">
+            <h1>Найдено кандидатов {{ count }}</h1>
+        </div>
+        <div class="info_block">
+            {% for i in candidate %}
+                <p><a href="/candidates/{{ i.id }}">{{ i.name }}</a></p>
+            {% endfor %}
+        </div>
     </body>
 </html>

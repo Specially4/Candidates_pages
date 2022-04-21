@@ -5,9 +5,13 @@
         <title>Список кандидатов</title>
     </head>
     <body>
-        <h1>Найдено со скиллом "{{ skill_name }}": {{ count }}</h1>
-        {% for cand in candidate %}
-            <p><a href="/candidates/{{ cand.id }}">{{ cand.name }}</a></p>
-        {% endfor %}
+        <div class="block"
+            <h1>Найдено со скиллом "{{ skill_name }}": {{ count }}</h1>
+        </div>
+        <div class="info_block">
+            {% for cand in candidate %}
+                <p><a href="/candidates/{{ cand.id }}">{{ cand.name }}</a></p>
+            {% endfor %}
+        </div>
     </body>
 </html>

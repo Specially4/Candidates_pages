@@ -5,9 +5,13 @@
         <title>Карточка кандидата</title>
     </head>
     <body>
-        <h1>{{ candidate.name }}</h1>
-        <p>Должность: {{ candidate.position }}</p>
-        <img src="{{ candidate.picture }}" width=200 alt="картинка кандидата"/>
-        <p>Умения: {{ candidate.skills }}</p>
+        <div class="block">
+            <h1>{{ candidate.name }}</h1>
+        </div>
+        <div class="info_block">
+            <p>Должность: {{ candidate.position }}</p>
+            <img src="{{ candidate.picture }}" width=200 alt="картинка кандидата"/>
+            <p>Умения: {{ candidate.skills }}</p>
+        </div>
     </body>
 </html>

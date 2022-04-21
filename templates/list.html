@@ -3,11 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <title>Список кандидатов</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Все кандидаты</h1>
-        {% for cand in candidate %}
-            <p><a href="/candidates/{{ cand.id }}">{{ cand.name }}</a></p>
-        {% endfor %}
+        <div class="block">
+            <h1>Все кандидаты</h1>
+        </div>
+        <div class="info_block">
+            {% for cand in candidate %}
+                <p><a href="/candidates/{{ cand.id }}">{{ cand.name }}</a></p>
+            {% endfor %}
+        </div>
     </body>
 </html>

@@ -29,4 +29,4 @@ def candidates_skill_page(skill_name):
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
